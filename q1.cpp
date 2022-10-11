@@ -40,4 +40,19 @@ void swapTwoValues(int n1, int n2) {
 	n2 = temp_num;
 
 }
+
+void getinput(float &fnum1, float &fnum2) {
+	cout << "Enter Number 1: ";
+	cin >> fnum1;
+	cout << "Enter Number 2: ";
+	cin >> fnum1;
+	
+}
+
+void swapTwoValues(float fnum1, float fnum2) {
+	int temp_num = fnum1;
+	fnum1 = fnum2;
+	fnum2 = temp_num;
+
+}
 // ******************************
