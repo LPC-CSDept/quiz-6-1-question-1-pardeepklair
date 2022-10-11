@@ -3,19 +3,22 @@
 using namespace std;
 
 //********************
-// Declare Function Prototypes
+void getinput(int &, int &);
+void swapTwoValues(int, int);
+void getinput(float &, float &);
+void swapTwoValues(float, float);
 //********************
 
 int main()
 {
-	int num1, num2;
+	int n1, n2;
 	float fnum1, fnum2;
-	getinput(num1, num2);
-	cout << " Before Swap" << setw(5) << num1 << setw(5) << num2 << setw(5) << endl;
-	swapTwoValues(num1, num2);
-	cout << " After Swap" << setw(5) << num1 << setw(5) << num2 << setw(5) << endl;
+	getinput(n1, n2);
+	cout << " Before Swap" << setw(5) << n1 << setw(5) << n2 << setw(5) << endl;
+	swapTwoValues(n1, n2);
+	cout << " After Swap" << setw(5) << n1 << setw(5) << n2 << setw(5) << endl;
 
-	// -- Call overloaded function with float parameters
+
 	getinput(fnum1, fnum2);
 	cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
 	swapTwoValues(fnum1, fnum2);
@@ -23,5 +26,18 @@ int main()
 }
 
 // ******************************
-// Implement all your functions here
+void getinput(int &n1, int &n2) {
+	cout << "Enter Number 1: ";
+	cin >> n1;
+	cout << "Enter Number 2: ";
+	cin >> n2;
+
+}
+
+void swapTwoValues(int n1, int n2) {
+	int temp_num = n1;
+	n1 = n2;
+	n2 = temp_num;
+
+}
 // ******************************
